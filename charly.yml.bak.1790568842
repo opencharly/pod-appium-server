@@ -1,5 +1,7 @@
+version: 2026.232.0520
 appium-server:
     candy:
+        version: 2026.145.1302
         description: |
             Appium 3.x WebDriver server with the uiautomator2 driver and a pinned WebView chromedriver
             Installs the Appium 3.x WebDriver server (CachyOS/AUR `appium`,
@@ -12,10 +14,10 @@ appium-server:
             response from the running server, so each step is independently
             verifiable.
         require:
-            - '@github.com/opencharly/layer-nodejs:v2026.239.1624'
-            - '@github.com/opencharly/layer-java-openjdk:v2026.239.1627'
+            - '@github.com/opencharly/layer-nodejs:v2026.235.2056'
+            - '@github.com/opencharly/layer-java-openjdk:v2026.237.457'
             - '@github.com/opencharly/layer-android-sdk:v2026.250.1813'
-            - '@github.com/opencharly/layer-supervisord:v2026.240.0121'
+            - '@github.com/opencharly/layer-supervisord:v2026.235.2056'
         var:
             # Tracks the API-36 google_apis_playstore System WebView Chrome version
             # (live-probed 133.0.6943.137). Pinned to the nearest Chrome-for-Testing
